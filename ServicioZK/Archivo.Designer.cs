@@ -1,4 +1,7 @@
-﻿namespace ServicioZK
+﻿using System.Data.Common;
+using System.Data;
+
+namespace ServicioZK
 {
     partial class Archivo
     {
@@ -29,12 +32,12 @@
         private void InitializeComponent()
         {
             this.stLapso = new System.Timers.Timer();
-            ((System.ComponentModel.ISupportInitialize)(this.stLapso)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.stLapso)).BeginInit();           
             // 
             // stLapso
             // 
             this.stLapso.Enabled = true;
-            this.stLapso.Interval = 60000D;
+            this.stLapso.Interval = 60000;
             this.stLapso.Elapsed += new System.Timers.ElapsedEventHandler(this.stLapso_Elapsed);
             // 
             // Archivo
